@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body class="container">
-    <h1 class="header">My Personal Library</h1>    
 
+    <h1 class="header">My Personal Library</h1>    
     <br>
+
+    <!-- The card with all of the user input fields (with labels) -->
     <div class="card" id="card">
         <div class="card-body">
             <div class="row">
@@ -25,13 +27,6 @@
                         <input type="text" class="form-control" id="new-author">
                     </div>
                 </div>
-                <div class="row-sm" id="rating">  
-                    <!-- maybe I can make this stars instead of numbers -->
-                    <div class="form-group">
-                        <label for="new-rating">Rating 1-5</label>
-                        <input type="text" class="form-control" id="new-rating">
-                    </div>
-                </div>
                 <div class="row-sm" id="finish-date">
                     <div class="form-group">
                         <label for="new-finish-date">Finished Date</label>
@@ -42,25 +37,25 @@
         </div>
     </div>
     <br>
+
+    <!-- Button to add a new book, when clicked JavaScript will take all the user inputted information and log it into the table. -->
     <div>
         <button id="add" class="btn btn-secondary from-control">Add New Book</button>
     </div>
     <br>
-    <table id="table" class="table table-success table-bordered table-striped">
+
+    <!-- Table with the headings for each column -->
+    <table id="table" class="table table-success table-bordered table-striped table-hover">
         <tr>
             <th>Title</th>
             <th>Author</th>
-            <th>Rating</th>
             <th>Date Finished</th>
             <th>Remove Book</th>
             
         </tr>
     </table>
 
-    <p class="review">
-        <div class="stars">
-        </div>
-    </p>
+   
 
 
 
