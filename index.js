@@ -13,8 +13,8 @@ document.getElementById('add').addEventListener('click', () => {
     
     let remove = row.insertCell(4); //puts the button created by the function below into the fifth cell of the row
     remove.appendChild(createDeleteButton(id++)); //attaching the function to create a delete button to the remove variable (which is inserted into it's appropriate cell)
-    let edit = row.insertCell(5);
-    edit.appendChild(createEditButton(id++));
+    // let edit = row.insertCell(5);
+    // edit.appendChild(createEditButton(id++));
 
     document.getElementById('new-title').value = ''; //resets field to empty
     document.getElementById('new-author').value = ''; //resets field to empty
@@ -70,31 +70,31 @@ At least the button is there I guess.
 //////////////////////////////////////////////////////////////////////*/
 
 
-function createEditButton(id) {
-    let btnEdit = document.createElement('button'); //creates edit button
-    btnEdit.className = 'btn btn-secondary'; //uses bootstrap to style it
-    btnEdit.id = id; //gives it an id 
-    btnEdit.innerHTML = 'Edit'; //what the button itself says
+// function createEditButton(id) {
+//     let btnEdit = document.createElement('button'); //creates edit button
+//     btnEdit.className = 'btn btn-secondary'; //uses bootstrap to style it
+//     btnEdit.id = id; //gives it an id 
+//     btnEdit.innerHTML = 'Edit'; //what the button itself says
 
-    btnEdit.addEventListener('click', () => { //adding an event listener that, on a click, will perform the below function
-        console.log(`Editing row with id: item-${id}`);
-
-        
+//     btnEdit.addEventListener('click', () => { //adding an event listener that, on a click, will perform the below function
+//         console.log(`Editing row with id: item-${id}`);
 
         
+
+        
         
 
 
 
-            // This version pops error: uncaught typeerror: cannot read properties of null (reading 'getElementsByTagName') at HTMLButtonElement.<anonymous> (index.js:76:31)
-        // let editedRow = document.getElementById(`item-${id}`);
-        // let cells = editedRow.getElementsByTagName('new-title');
-        // alert(Cells[0].innerText);
+//             // This version pops error: uncaught typeerror: cannot read properties of null (reading 'getElementsByTagName') at HTMLButtonElement.<anonymous> (index.js:76:31)
+//         // let editedRow = document.getElementById(`item-${id}`);
+//         // let cells = editedRow.getElementsByTagName('new-title');
+//         // alert(Cells[0].innerText);
 
-     });
-     return btnEdit;
+//      });
+//      return btnEdit;
 
-    };
+//     };
 
 
 
