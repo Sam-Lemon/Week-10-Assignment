@@ -2,7 +2,7 @@ let id = 0;
 
 
 document.getElementById('add').addEventListener('click', () => {
-    let myTable = document.getElementById('table'); //brings the table over and creates a new variable
+    let myTable = document.getElementById('table'); //ties the JavaScript and HTML element together
     let row = myTable.insertRow(1); //header row is at position 0, so first inserted row needs to be 1
     
     row.setAttribute('id', `item-${id}`); //this gives each row it's own id
@@ -60,8 +60,13 @@ body.style.fontFamily = 'serif';
 I would really like to make this edit button auto-populate the current 
 information into the form and then update the table with the user edited 
 information. However, I'm getting stuck at how to extrapolate the values 
-from the cells of the row. A couple of things I tried are commented out
-below.
+from the cells of the row. I tried a bunch of different things but was
+dumb and deleted them instead of keeping them and commenting them out
+(mostly because I don't like how messy it looks, but I see how it 
+could also be pretty beneficial so that I can keep track of all my 
+attempts.) But I tried to figure it out for many hours and have now just
+given up. Maybe I'll come back to it in the future and try to figure it out.
+At least the button is there I guess.
 //////////////////////////////////////////////////////////////////////*/
 
 
@@ -77,7 +82,7 @@ function createEditButton(id) {
         
 
         
-        let elementToEdit = document.getElementById(`item=${id}`);
+        
 
 
 
